@@ -707,12 +707,9 @@
   <div class="notify-box">
     <h2>Be First to Board</h2>
     <div class="gold-rule"></div>
-    <p>CruiseSort is currently in development. Enter your email to get early access and be notified the moment we launch.</p>
-    <div class="notify-form">
-      <input type="email" placeholder="your@email.com">
-      <button onclick="handleSignup(this)">Notify Me</button>
-    </div>
-    <p style="margin-top:1rem; font-size:0.75rem; color:rgba(184,200,216,0.35);">No spam. Just your launch notification.</p>
+    <p>CruiseSort is currently in development. Send us your email to get early access and be notified the moment we launch.</p>
+    <a href="mailto:admin@cruisesort.com?subject=CruiseSort%20Early%20Access&body=Hi%2C%0A%0AI%27d%20like%20to%20get%20early%20access%20to%20CruiseSort%20when%20it%20launches.%0A%0APlease%20add%20me%20to%20the%20list%21%0A%0AThanks" class="btn-primary" style="display:inline-block; margin-bottom:1rem;">Request Early Access</a>
+    <p style="margin-top:0.5rem; font-size:0.75rem; color:rgba(184,200,216,0.35);">No spam. Just your launch notification.</p>
   </div>
 </section>
 
@@ -723,18 +720,6 @@
 </footer>
 
 <script>
-  function handleSignup(btn) {
-    const input = btn.previousElementSibling;
-    if (!input.value || !input.value.includes('@')) {
-      input.style.borderBottom = '2px solid #e05';
-      return;
-    }
-    btn.textContent = '✓ You\'re on the list!';
-    btn.style.background = '#1a6a3a';
-    btn.disabled = true;
-    input.disabled = true;
-  }
-
   // Subtle parallax on scroll
   window.addEventListener('scroll', () => {
     const y = window.scrollY;
